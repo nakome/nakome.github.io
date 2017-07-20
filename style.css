@@ -43,7 +43,7 @@ main#root ul li{
 main#root ul li a{
     color: #2196F3;
     transition: color 500ms ease;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 main#root ul li a:hover,
