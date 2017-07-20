@@ -4,7 +4,8 @@ const listOfExternalSites = [
     { name: 'Github', icon: 'fa fa-github', ref: 'https://github.com/nakome' },
     { name: 'Bitbucket', icon: 'fa fa-bitbucket', ref: 'https://bitbucket.com/nakome' },
     { name: 'Soundcloud', icon: 'fa fa-soundcloud', ref: 'https://soundcloud.com/nakome' },
-    { name: 'Instagram', icon: 'fa fa-instagram', ref: 'https://instagram.com/monchovarela' }
+    { name: 'Instagram', icon: 'fa fa-instagram', ref: 'https://instagram.com/monchovarela' },
+    { name: 'Twitter', icon: 'fa fa-twitter', ref: 'https://twitter.com/nakome' }
 ]
 
 class Social {
