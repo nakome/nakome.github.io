@@ -17,7 +17,7 @@ class Social {
     }
     update(data) {
         this.link.title = data.name;
-        this.link.href = data.href;
+        this.link.href = data.ref;
         this.icon.className = data.icon;
     }
 }
