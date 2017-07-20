@@ -8,8 +8,8 @@ html,body{
 }
 
 body {
-    background: #fdfdfd;
-    color: #777;
+    background: linear-gradient(120deg, #2196F3,#9C27B0);
+    color: #fff;
     font-size: 16px;
     font-weight: normal;
     line-height: 1;
@@ -41,13 +41,13 @@ main#root ul li{
     margin: 0.5em 0.8em;
 }
 main#root ul li a{
-    color: #2196F3;
+    color: #FFEB3B;
     transition: color 500ms ease;
     font-size: 20px;
 }
 
 main#root ul li a:hover,
 main#root ul li a:focus{
-    color:#607D8B;
+    color: #fff171;
     transition: color 500ms ease;
 }
