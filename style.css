@@ -10,7 +10,7 @@ html,body{
 body {
     background: #fdfdfd;
     color: #777;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 1;
     font-family: "consolas",monospace;
@@ -27,4 +27,27 @@ main#root {
     height: 180px;
     text-align: center;
     vertical-align: middle;
+}
+
+main#root ul {
+    margin: 0.5em auto;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+main#root ul li{
+    display:inline-block;
+    margin: 0.5em 0.8em;
+}
+main#root ul li a{
+    color: #2196F3;
+    transition: color 500ms ease;
+    font-size: 24px;
+}
+
+main#root ul li a:hover,
+main#root ul li a:focus{
+    color:#607D8B;
+    transition: color 500ms ease;
 }

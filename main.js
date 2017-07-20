@@ -1,12 +1,37 @@
-const {el,mount} = redom;
+const { el, mount, list, setChildren } = redom;
 
+const listOfExternalSites = [
+    { name: 'Github', icon: 'fa fa-github', ref: 'https://github.com/nakome' },
+    { name: 'Bitbucket', icon: 'fa fa-bitbucket', ref: 'https://bitbucket.com/nakome' },
+    { name: 'Soundcloud', icon: 'fa fa-soundcloud', ref: 'https://soundcloud.com/nakome' },
+    { name: 'Instagram', icon: 'fa fa-instagram', ref: 'https://instagram.com/monchovarela' }
+]
 
-class App{
-  constructor(){
-     this.el = el('h1','Moncho Varela.');
-  }
+class Social {
+    constructor() {
+        this.el = el('li',
+            this.link = el('a',
+                this.icon = el('i')
+            )
+        );
+    }
+    update(data) {
+        this.link.title = data.name;
+        this.link.href = data.href;
+        this.icon.className = data.icon;
+    }
 }
 
 
+class App {
+    constructor() {
+        this.el = el('main#root');
+        this.header = el('h1', 'Moncho Varela.');
+        this.sites = list('ul', Social);
+        this.sites.update(listOfExternalSites);
+        setChildren(this.el, [this.header,this.sites]);
+    }
+}
+
 const app = new App();
-mount(document.querySelector('#root'),app);
+mount(document.body, app);
